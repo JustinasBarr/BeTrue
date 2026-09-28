@@ -1,0 +1,82 @@
+{
+  "name": "BeTrue.",
+  "reference": "Brand register: pure black ground, centred white bold wordmark",
+  "color": {
+    "ground": "#000000",
+    "wordmark": "#FFFFFF"
+  },
+  "wordmark": {
+    "text": "BeTrue.",
+    "font": "HelveticaNeue-Bold",
+    "pointSize": 44,
+    "devices": "iPhone only, portrait and landscape",
+    "position": "centre of screen"
+  },
+  "appIcon": {
+    "file": "BeTrue/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "size": 1024,
+    "opaque": true,
+    "inkWidth": "82% of icon width, centred",
+    "source": "built-in image_gen, exec-c29bd236-43c8-481a-9ddc-638ee728fbea.png (1254 px), resized with sips"
+  },
+  "launchMotion": {
+    "source": "BeTrue/App/Launch/LaunchSplash.swift",
+    "statusBar": "hidden on the native launch screen; returns at 0.06 s, before anything shows through",
+    "cutout": {
+      "concept": "the live app shows through the wordmark's letters, then the black around them fades",
+      "durationSeconds": 1.15,
+      "keysPerSecond": 60,
+      "holdFraction": 0.08,
+      "groundFade": [
+        0.08,
+        0.12
+      ],
+      "whiteLettersFade": [
+        0.12,
+        0.33
+      ],
+      "coverFade": [
+        0.26,
+        1.0
+      ],
+      "growth": {
+        "from": 0.12,
+        "to": 1.0,
+        "maxScale": 2.4,
+        "about": "wordmark centre"
+      },
+      "curve": "smoothstep",
+      "statusBarSeconds": 0.0575
+    },
+    "reduceMotion": {
+      "durationSeconds": 0.35,
+      "holdSeconds": 0.1,
+      "scale": 1,
+      "statusBarSeconds": 0.05
+    },
+    "properties": [
+      "launch screen ground colour alpha",
+      "wordmark opacity",
+      "wordmark transform.scale",
+      "cover opacity",
+      "cover transform.scale"
+    ],
+    "cover": "one CAShapeLayer: screen rect minus the CoreText glyph outlines of the wordmark, even-odd fill, built once",
+    "debugLaunchArguments": [
+      "-LaunchSplashReduceMotion YES",
+      "-LaunchSplashFreezeAt <seconds>",
+      "-LaunchSplashPreviewFixture YES"
+    ]
+  },
+  "forbidden": [
+    "gradients",
+    "textures",
+    "shadows",
+    "blur",
+    "layer masks",
+    "video or Lottie"
+  ],
+  "allowed": [
+    "one vector cutout of the wordmark's own glyphs"
+  ]
+}
