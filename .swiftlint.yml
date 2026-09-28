@@ -1,0 +1,24 @@
+included:
+  - BeTrue
+  - BeTrueTests
+  - BeTrueUITests
+
+opt_in_rules:
+  - redundant_self
+  - private_swiftui_state
+  - modifier_order
+  - superfluous_else
+  - unhandled_throwing_task
+
+redundant_self:
+  only_in_closures: false
+
+identifier_name:
+  excluded:
+    - id
+    - x
+    - y
+
+line_length:
+  warning: 120
+  ignores_comments: true

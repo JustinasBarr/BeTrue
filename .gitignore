@@ -1,0 +1,16 @@
+# Local API key: never commit
+BeTrue/App/Secrets.plist
+
+# Xcode
+xcuserdata/
+DerivedData/
+.build/
+*.xcresult
+perf/
+
+# Tools and OS
+.playwright-mcp/
+.DS_Store
+
+# Agent worktrees
+.claude/
