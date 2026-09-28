@@ -100,7 +100,7 @@ struct RootView: View {
             .background(Palette.ground)
     }
 
-    /// Re-selecting the open tab pops to its first screen and scrolls it back to the top, like the system apps.
+    /// Re-selecting the open tab scrolls it back to the top, like the system apps.
     private func select(_ tab: AppRouter.Tab) {
         if tab == router.selectedTab {
             scrollToTopRequests[tab, default: 0] += 1

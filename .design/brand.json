@@ -13,11 +13,10 @@
     "position": "centre of screen"
   },
   "appIcon": {
-    "file": "BeTrue/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "file": "BeTrue/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
     "size": 1024,
     "opaque": true,
-    "inkWidth": "82% of icon width, centred",
-    "source": "built-in image_gen, exec-c29bd236-43c8-481a-9ddc-638ee728fbea.png (1254 px), resized with sips"
+    "inkWidth": "82% of icon width, centred"
   },
   "launchMotion": {
     "source": "BeTrue/App/Launch/LaunchSplash.swift",

@@ -73,7 +73,6 @@ struct PhotoFeedView: View {
             }
         }
         .background(Palette.ground)
-        .toolbar(.hidden, for: .navigationBar)
         .task { await feed.loadFirstPage() }
         .task { await search.loadRecentSearches() }
         .onChange(of: isSearchFocused) { isFocused in

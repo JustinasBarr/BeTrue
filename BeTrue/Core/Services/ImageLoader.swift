@@ -21,8 +21,6 @@ nonisolated final class ImageLoader: ImageLoading, @unchecked Sendable {
         static let diskBudgetBytes = 200 * megabyte
         static let diskTrimTargetBytes = 160 * megabyte
         static let diskCacheFolder = "ImageFiles"
-        /// Where earlier builds kept downloads, in a URLCache that nothing reads any more.
-        static let legacyDiskCacheFolder = "Images"
         static let connectionsPerHost = 6
         /// Saving for later leaves most of the connection to the tiles on screen.
         static let keepingConnectionsPerHost = 2
@@ -47,7 +45,6 @@ nonisolated final class ImageLoader: ImageLoading, @unchecked Sendable {
         keeping.allowsExpensiveNetworkAccess = false
         keeping.allowsConstrainedNetworkAccess = false
         keepingSession = URLSession(configuration: keeping)
-        Self.removeLegacyDiskCache()
     }
 
     func cachedImage(for url: URL, maxPixelSize: CGFloat) -> UIImage? {
@@ -154,14 +151,6 @@ nonisolated final class ImageLoader: ImageLoading, @unchecked Sendable {
         configuration.simulateOfflineIfRequested()
         #endif
         return configuration
-    }
-
-    private static func removeLegacyDiskCache() {
-        let caches = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
-        let folder = caches.appendingPathComponent(Constants.legacyDiskCacheFolder, isDirectory: true)
-        DispatchQueue.global(qos: .utility).async {
-            try? FileManager.default.removeItem(at: folder)
-        }
     }
 
     private static func cacheKey(_ url: URL, _ maxPixelSize: CGFloat) -> String {
