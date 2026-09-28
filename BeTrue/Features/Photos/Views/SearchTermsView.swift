@@ -3,7 +3,10 @@ import SwiftUI
 /// Recent searches as chips, or a few ideas before the first one. A recent search can be removed.
 struct SearchTermsView: View {
     private enum Constants {
-        static let suggestions = ["Mountains", "Night city", "Portraits", "Ocean", "Architecture"]
+        static let suggestions = [
+            String(localized: "Mountains"), String(localized: "Night city"), String(localized: "Portraits"),
+            String(localized: "Ocean"), String(localized: "Architecture")
+        ]
         static let spacing: CGFloat = 8
         static let height: CGFloat = 36
         static let horizontalPadding: CGFloat = 12

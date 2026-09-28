@@ -42,7 +42,7 @@ Without a key, the app starts and shows how to add one.
 ## Limitations
 
 - iPhone only. There's no iPad layout, and the viewer doesn't page between items.
-- English only. No strings are localized yet.
+- English and French only. Photo captions and names stay as Pexels sends them.
 - Video search exists in the repository, but no screen uses it yet.
 - Offline, the viewer shows the grid-size image if the full-size one was never downloaded.
 - A video's still from Pexels can be a different moment than its first frame. On a slow connection, the switch shows as a short fade.

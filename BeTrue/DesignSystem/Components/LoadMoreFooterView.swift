@@ -24,7 +24,7 @@ struct LoadMoreFooterView: View {
             case .idle:
                 Color.clear
             case .loading:
-                LoadingLineView(label: "Loading more photos")
+                LoadingLineView(label: String(localized: "Loading more photos"))
                     .frame(width: Constants.loadingLineWidth)
             case .failed(let message):
                 HStack {

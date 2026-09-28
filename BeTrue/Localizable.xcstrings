@@ -1,0 +1,1076 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@ and up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ et plus"
+          }
+        }
+      }
+    },
+    "%@ · %lld s and more" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %lld s et plus"
+          }
+        }
+      }
+    },
+    "%@ · %lld to %lld s" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · de %lld à %lld s"
+          }
+        }
+      }
+    },
+    "%@ · up to %lld s" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · jusqu’à %lld s"
+          }
+        }
+      }
+    },
+    "%@, photo by %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, photo de %@"
+          }
+        }
+      }
+    },
+    "%@, video, %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, vidéo, %@"
+          }
+        }
+      }
+    },
+    "%@, video, %@ by %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, vidéo, %@, par %@"
+          }
+        }
+      }
+    },
+    "%lld seconds" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld second"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld seconds"
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld seconde"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld secondes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Add your API key" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez votre clé API"
+          }
+        }
+      }
+    },
+    "Any color" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les couleurs"
+          }
+        }
+      }
+    },
+    "Any language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les langues"
+          }
+        }
+      }
+    },
+    "Any length" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les durées"
+          }
+        }
+      }
+    },
+    "Any orientation" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les orientations"
+          }
+        }
+      }
+    },
+    "Any quality" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les qualités"
+          }
+        }
+      }
+    },
+    "Any size" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les tailles"
+          }
+        }
+      }
+    },
+    "Appearance" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparence"
+          }
+        }
+      }
+    },
+    "Architecture" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Architecture"
+          }
+        }
+      }
+    },
+    "BeTrue. needs a Pexels API key to load photos. Copy Config/Secrets.example.plist to BeTrue/App/Secrets.plist, paste your key as PexelsAPIKey, then build and run again." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BeTrue. a besoin d’une clé API Pexels pour charger les photos. Copiez Config/Secrets.example.plist vers BeTrue/App/Secrets.plist, collez votre clé dans PexelsAPIKey, puis recompilez et relancez l’app."
+          }
+        }
+      }
+    },
+    "Black" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noir"
+          }
+        }
+      }
+    },
+    "Blue" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bleu"
+          }
+        }
+      }
+    },
+    "Brown" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marron"
+          }
+        }
+      }
+    },
+    "Can't play this video" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de lire cette vidéo"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        }
+      }
+    },
+    "Check your internet connection and try again." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez votre connexion Internet et réessayez."
+          }
+        }
+      }
+    },
+    "Check your internet connection to play this video." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez votre connexion Internet pour lire cette vidéo."
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer"
+          }
+        }
+      }
+    },
+    "Clear filters" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer les filtres"
+          }
+        }
+      }
+    },
+    "Clear text" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effacer le texte"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
+          }
+        }
+      }
+    },
+    "Color" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couleur"
+          }
+        }
+      }
+    },
+    "Couldn't load more." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger la suite."
+          }
+        }
+      }
+    },
+    "Dark" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sombre"
+          }
+        }
+      }
+    },
+    "Edit “%@” in the search field" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier « %@ » dans le champ de recherche"
+          }
+        }
+      }
+    },
+    "Filters" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtres"
+          }
+        }
+      }
+    },
+    "Gray" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gris"
+          }
+        }
+      }
+    },
+    "Green" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vert"
+          }
+        }
+      }
+    },
+    "Hourly limit reached." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Limite horaire atteinte."
+          }
+        }
+      }
+    },
+    "Landscape" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paysage"
+          }
+        }
+      }
+    },
+    "Language" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        }
+      }
+    },
+    "Large" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grande"
+          }
+        }
+      }
+    },
+    "Large · 24 MP and up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grande · 24 MP et plus"
+          }
+        }
+      }
+    },
+    "Length" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durée"
+          }
+        }
+      }
+    },
+    "Light" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clair"
+          }
+        }
+      }
+    },
+    "Loading" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement"
+          }
+        }
+      }
+    },
+    "Loading more photos" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement d’autres photos"
+          }
+        }
+      }
+    },
+    "Long" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longue"
+          }
+        }
+      }
+    },
+    "Medium" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moyenne"
+          }
+        }
+      }
+    },
+    "Medium · 12 MP and up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moyenne · 12 MP et plus"
+          }
+        }
+      }
+    },
+    "Mountains" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montagnes"
+          }
+        }
+      }
+    },
+    "Night city" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ville de nuit"
+          }
+        }
+      }
+    },
+    "No photos found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune photo trouvée"
+          }
+        }
+      }
+    },
+    "No photos yet" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas encore de photos"
+          }
+        }
+      }
+    },
+    "No popular videos match these filters. Try fewer filters." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune vidéo populaire ne correspond à ces filtres. Essayez avec moins de filtres."
+          }
+        }
+      }
+    },
+    "No videos found" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune vidéo trouvée"
+          }
+        }
+      }
+    },
+    "No videos yet" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas encore de vidéos"
+          }
+        }
+      }
+    },
+    "Nothing matches “%@” with these filters. Try fewer filters." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rien ne correspond à « %@ » avec ces filtres. Essayez avec moins de filtres."
+          }
+        }
+      }
+    },
+    "Nothing matches “%@”. Try a broader word." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rien ne correspond à « %@ ». Essayez un mot plus général."
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "Ocean" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Océan"
+          }
+        }
+      }
+    },
+    "Offline · saved %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hors ligne · enregistré %@"
+          }
+        }
+      }
+    },
+    "Opens the photographer's page" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre la page du photographe"
+          }
+        }
+      }
+    },
+    "Opens the videographer's page" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre la page du vidéaste"
+          }
+        }
+      }
+    },
+    "Orange" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orange"
+          }
+        }
+      }
+    },
+    "Orientation" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orientation"
+          }
+        }
+      }
+    },
+    "Pexels didn't answer as expected. Try again." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pexels n’a pas répondu comme prévu. Réessayez."
+          }
+        }
+      }
+    },
+    "Pexels rejected the API key. Put a valid key in BeTrue/App/Secrets.plist and build again." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pexels a refusé la clé API. Mettez une clé valide dans BeTrue/App/Secrets.plist et recompilez."
+          }
+        }
+      }
+    },
+    "Photo" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo"
+          }
+        }
+      }
+    },
+    "Photo by %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo de %@"
+          }
+        }
+      }
+    },
+    "Photos" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photos"
+          }
+        }
+      }
+    },
+    "Pink" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rose"
+          }
+        }
+      }
+    },
+    "Portrait" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portrait"
+          }
+        }
+      }
+    },
+    "Portraits" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portraits"
+          }
+        }
+      }
+    },
+    "Powered by Pexels" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fourni par Pexels"
+          }
+        }
+      }
+    },
+    "Pull down to check for new photos." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tirez vers le bas pour chercher de nouvelles photos."
+          }
+        }
+      }
+    },
+    "Pull down to check for new videos." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tirez vers le bas pour chercher de nouvelles vidéos."
+          }
+        }
+      }
+    },
+    "Quality" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualité"
+          }
+        }
+      }
+    },
+    "Red" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rouge"
+          }
+        }
+      }
+    },
+    "Remove" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        }
+      }
+    },
+    "Retry" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayer"
+          }
+        }
+      }
+    },
+    "Search photos" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher des photos"
+          }
+        }
+      }
+    },
+    "Searching" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherche en cours"
+          }
+        }
+      }
+    },
+    "Share" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partager"
+          }
+        }
+      }
+    },
+    "Short" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courte"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille"
+          }
+        }
+      }
+    },
+    "Small" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Petite"
+          }
+        }
+      }
+    },
+    "Small · 4 MP and up" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Petite · 4 MP et plus"
+          }
+        }
+      }
+    },
+    "Something went wrong" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un problème est survenu"
+          }
+        }
+      }
+    },
+    "Square" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carré"
+          }
+        }
+      }
+    },
+    "Suggestions" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggestions"
+          }
+        }
+      }
+    },
+    "Taking a short break" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Petite pause"
+          }
+        }
+      }
+    },
+    "That's everything." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C’est tout."
+          }
+        }
+      }
+    },
+    "The API key was rejected." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La clé API a été refusée."
+          }
+        }
+      }
+    },
+    "The hourly request limit is used up. Try again in a little while." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La limite horaire de requêtes est atteinte. Réessayez dans un moment."
+          }
+        }
+      }
+    },
+    "Try again" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réessayer"
+          }
+        }
+      }
+    },
+    "Turquoise" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turquoise"
+          }
+        }
+      }
+    },
+    "Video" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vidéo"
+          }
+        }
+      }
+    },
+    "Video by %@" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vidéo de %@"
+          }
+        }
+      }
+    },
+    "Videos" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vidéos"
+          }
+        }
+      }
+    },
+    "Violet" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Violet"
+          }
+        }
+      }
+    },
+    "What you've already seen stays on this iPhone. New items load when you're back online." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce que vous avez déjà vu reste sur cet iPhone. Les nouveautés se chargeront dès votre retour en ligne."
+          }
+        }
+      }
+    },
+    "White" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blanc"
+          }
+        }
+      }
+    },
+    "Yellow" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaune"
+          }
+        }
+      }
+    },
+    "You're offline" : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous êtes hors ligne"
+          }
+        }
+      }
+    },
+    "You're offline." : {
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous êtes hors ligne."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

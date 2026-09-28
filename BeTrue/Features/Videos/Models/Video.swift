@@ -41,9 +41,9 @@ nonisolated struct Video: Decodable, Identifiable, Hashable, Sendable {
     }
 
     var spokenDescription: String {
-        let length = durationSeconds == 1 ? "1 second" : "\(durationSeconds) seconds"
-        let byline = user.name.isEmpty ? "" : " by \(user.name)"
-        return "\(caption), video, \(length)\(byline)"
+        let length = String(localized: "\(durationSeconds) seconds")
+        return user.name.isEmpty ? String(localized: "\(caption), video, \(length)")
+                                 : String(localized: "\(caption), video, \(length) by \(user.name)")
     }
 
     private let thumbnailSourceURL: URL
@@ -117,7 +117,7 @@ nonisolated struct Video: Decodable, Identifiable, Hashable, Sendable {
             let slug = words.joined(separator: " ")
             return slug.prefix(1).uppercased() + slug.dropFirst()
         }
-        return author.isEmpty ? "Video" : "Video by \(author)"
+        return author.isEmpty ? String(localized: "Video") : String(localized: "Video by \(author)")
     }
 }
 

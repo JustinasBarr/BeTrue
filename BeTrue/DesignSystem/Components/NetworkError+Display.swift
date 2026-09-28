@@ -13,33 +13,34 @@ extension NetworkError {
 
     var title: String {
         switch self {
-        case .offline: return "You're offline"
-        case .unauthorized: return "Add your API key"
-        case .rateLimited: return "Taking a short break"
-        case .server, .invalidResponse: return "Something went wrong"
+        case .offline: return String(localized: "You're offline")
+        case .unauthorized: return String(localized: "Add your API key")
+        case .rateLimited: return String(localized: "Taking a short break")
+        case .server, .invalidResponse: return String(localized: "Something went wrong")
         }
     }
 
     var detail: String {
         switch self {
         case .offline:
-            return "What you've already seen stays on this iPhone. New items load when you're back online."
+            return String(localized:
+                "What you've already seen stays on this iPhone. New items load when you're back online.")
         case .unauthorized:
-            return "Pexels rejected the API key. Put a valid key in BeTrue/App/Secrets.plist "
-                + "and build again."
+            return String(localized:
+                "Pexels rejected the API key. Put a valid key in BeTrue/App/Secrets.plist and build again.")
         case .rateLimited:
-            return "The hourly request limit is used up. Try again in a little while."
+            return String(localized: "The hourly request limit is used up. Try again in a little while.")
         case .server, .invalidResponse:
-            return "Pexels didn't answer as expected. Try again."
+            return String(localized: "Pexels didn't answer as expected. Try again.")
         }
     }
 
     var shortMessage: String {
         switch self {
-        case .offline: return "You're offline."
-        case .unauthorized: return "The API key was rejected."
-        case .rateLimited: return "Hourly limit reached."
-        case .server, .invalidResponse: return "Couldn't load more."
+        case .offline: return String(localized: "You're offline.")
+        case .unauthorized: return String(localized: "The API key was rejected.")
+        case .rateLimited: return String(localized: "Hourly limit reached.")
+        case .server, .invalidResponse: return String(localized: "Couldn't load more.")
         }
     }
 

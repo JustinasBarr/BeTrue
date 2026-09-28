@@ -73,10 +73,10 @@ struct RootView: View {
         ZStack {
             if dependencies.hasAPIKey {
                 FloatingTabBarView(items: [
-                    .init(value: AppRouter.Tab.photos, title: "Photos", systemImage: "photo.on.rectangle",
-                          identifier: "tab.photos"),
-                    .init(value: AppRouter.Tab.videos, title: "Videos", systemImage: "play.rectangle",
-                          identifier: "tab.videos")
+                    .init(value: AppRouter.Tab.photos, title: String(localized: "Photos"),
+                          systemImage: "photo.on.rectangle", identifier: "tab.photos"),
+                    .init(value: AppRouter.Tab.videos, title: String(localized: "Videos"),
+                          systemImage: "play.rectangle", identifier: "tab.videos")
                 ], selection: router.selectedTab, onSelect: select)
                 .scrollChromeBar(scrollChrome.chrome.bar)
                 .floatingHidden(isViewerOpen)
@@ -91,9 +91,11 @@ struct RootView: View {
 
     private var missingKey: some View {
         StateView(systemImage: "key",
-                  title: "Add your API key",
-                  detail: "BeTrue. needs a Pexels API key to load photos. Copy Config/Secrets.example.plist "
-                    + "to BeTrue/App/Secrets.plist, paste your key as PexelsAPIKey, then build and run again.",
+                  title: String(localized: "Add your API key"),
+                  detail: String(localized: """
+                    BeTrue. needs a Pexels API key to load photos. Copy Config/Secrets.example.plist \
+                    to BeTrue/App/Secrets.plist, paste your key as PexelsAPIKey, then build and run again.
+                    """),
                   identifier: "missingAPIKey")
             .background(Palette.ground)
     }

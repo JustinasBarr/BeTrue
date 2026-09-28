@@ -102,7 +102,7 @@ struct ViewerChromeView: View {
     }
 
     @ViewBuilder private var credit: some View {
-        let text = Text("\(item.videoURL == nil ? "Photo" : "Video") by \(item.creditName)")
+        let text = item.videoURL == nil ? Text("Photo by \(item.creditName)") : Text("Video by \(item.creditName)")
         if let creditURL = item.creditURL {
             Link(destination: creditURL) { text.underline() }
                 .accessibilityHint(item.videoURL == nil

@@ -69,7 +69,7 @@ nonisolated struct Photo: Decodable, Identifiable, Hashable, Sendable {
             let slug = words.joined(separator: " ")
             return slug.prefix(1).uppercased() + slug.dropFirst()
         }
-        return photographer.isEmpty ? "Photo" : "Photo by \(photographer)"
+        return photographer.isEmpty ? String(localized: "Photo") : String(localized: "Photo by \(photographer)")
     }
 }
 

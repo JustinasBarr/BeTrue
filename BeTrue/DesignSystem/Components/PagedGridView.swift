@@ -55,8 +55,9 @@ struct PagedGridView<Item: Identifiable & Sendable, Cell: View>: View where Item
                 case .idle, .loading:
                     SkeletonGridView()
                 case .failed(let error):
+                    let retry = StateView.Action(title: String(localized: "Try again"), perform: onRetry)
                     StateView(systemImage: error.systemImage, title: error.title, detail: error.detail,
-                              action: error.canRetry ? StateView.Action(title: "Try again", perform: onRetry) : nil)
+                              action: error.canRetry ? retry : nil)
                         .frame(minHeight: Constants.stateMinHeight)
                 case .loaded, .finished:
                     StateView(systemImage: emptyState.systemImage, title: emptyState.title,

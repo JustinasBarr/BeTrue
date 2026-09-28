@@ -86,9 +86,9 @@ struct PhotoFeedView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: Constants.headerSpacing) {
-            ScreenHeaderView(title: "Photos")
+            ScreenHeaderView(title: String(localized: "Photos"))
             SearchFieldView(text: $search.query,
-                            prompt: "Search photos",
+                            prompt: String(localized: "Search photos"),
                             isFocused: $isSearchFocused,
                             isActive: search.isShowingResults,
                             onSubmit: submit,
@@ -154,7 +154,7 @@ struct PhotoFeedView: View {
     @ViewBuilder
     private var searchLoadingLine: some View {
         if isGridDimmed {
-            LoadingLineView(label: "Searching")
+            LoadingLineView(label: String(localized: "Searching"))
                 .transition(.opacity)
         }
     }
@@ -166,7 +166,7 @@ struct PhotoFeedView: View {
                               aspectRatio: \.aspectRatio,
                               imageURL: \.gridImageURL,
                               emptyState: .init(systemImage: "magnifyingglass",
-                                                title: "No photos found",
+                                                title: String(localized: "No photos found"),
                                                 detail: noResultsDetail),
                               onItemAppear: loadMoreResults,
                               onRetry: retrySearch) { photo, width in
@@ -177,8 +177,8 @@ struct PhotoFeedView: View {
                               aspectRatio: \.aspectRatio,
                               imageURL: \.gridImageURL,
                               emptyState: .init(systemImage: "photo.on.rectangle",
-                                                title: "No photos yet",
-                                                detail: "Pull down to check for new photos."),
+                                                title: String(localized: "No photos yet"),
+                                                detail: String(localized: "Pull down to check for new photos.")),
                               onItemAppear: loadMoreCurated,
                               onRetry: retryCurated) { photo, width in
                     PhotoTileView(photo: photo, width: width)
@@ -210,9 +210,10 @@ struct PhotoFeedView: View {
     private var showsFilters: Bool { !search.query.isEmpty || search.isShowingResults }
 
     private var noResultsDetail: String {
-        let nothing = "Nothing matches \u{201C}\(search.submittedQuery)\u{201D}"
-        return search.submittedFilters.isEmpty ? "\(nothing). Try a broader word."
-                                               : "\(nothing) with these filters. Try fewer filters."
+        let query = search.submittedQuery
+        return search.submittedFilters.isEmpty
+            ? String(localized: "Nothing matches \u{201C}\(query)\u{201D}. Try a broader word.")
+            : String(localized: "Nothing matches \u{201C}\(query)\u{201D} with these filters. Try fewer filters.")
     }
 
     /// Stays while the user types, and always under VoiceOver, where a hidden search would be hard to find.

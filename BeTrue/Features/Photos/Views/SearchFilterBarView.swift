@@ -7,23 +7,23 @@ struct SearchFilterBarView: View {
 
     var body: some View {
         FilterRowView(filters: filters, hasChoice: !filters.isEmpty, onClear: clearFilters) {
-            FilterMenuView(title: "Orientation", anyTitle: "Any orientation",
+            FilterMenuView(title: String(localized: "Orientation"), anyTitle: String(localized: "Any orientation"),
                            options: SearchFilters.Orientation.allCases, selection: filters.orientation,
                            optionTitle: \.title, optionImage: \.symbol) { value in
                 change { $0.orientation = value }
             }
-            FilterMenuView(title: "Size", anyTitle: "Any size",
+            FilterMenuView(title: String(localized: "Size"), anyTitle: String(localized: "Any size"),
                            options: SearchFilters.Size.allCases, selection: filters.size,
                            optionTitle: \.menuTitle, chipTitle: \.title) { value in
                 change { $0.size = value }
             }
-            FilterMenuView(title: "Color", anyTitle: "Any color",
+            FilterMenuView(title: String(localized: "Color"), anyTitle: String(localized: "Any color"),
                            options: SearchFilters.ColorName.allCases, selection: filters.color,
                            optionTitle: \.title, optionImage: \.menuSwatch,
                            chipSwatch: filters.color?.swatch) { value in
                 change { $0.color = value }
             }
-            FilterMenuView(title: "Language", anyTitle: "Any language",
+            FilterMenuView(title: String(localized: "Language"), anyTitle: String(localized: "Any language"),
                            options: SearchFilters.Language.menuOrder(), selection: filters.language,
                            optionTitle: \.title) { value in
                 change { $0.language = value }
@@ -44,7 +44,13 @@ struct SearchFilterBarView: View {
 }
 
 private extension SearchFilters.Orientation {
-    var title: String { rawValue.capitalized }
+    var title: String {
+        switch self {
+        case .landscape: String(localized: "Landscape")
+        case .portrait: String(localized: "Portrait")
+        case .square: String(localized: "Square")
+        }
+    }
 
     var symbol: Image { Image(systemName: systemImage) }
 
@@ -58,21 +64,43 @@ private extension SearchFilters.Orientation {
 }
 
 private extension SearchFilters.Size {
-    var title: String { rawValue.capitalized }
+    var title: String {
+        switch self {
+        case .large: String(localized: "Large")
+        case .medium: String(localized: "Medium")
+        case .small: String(localized: "Small")
+        }
+    }
 
     /// The smallest photo each size allows, as Pexels defines it.
     var menuTitle: String {
         switch self {
-        case .large: "Large · 24 MP and up"
-        case .medium: "Medium · 12 MP and up"
-        case .small: "Small · 4 MP and up"
+        case .large: String(localized: "Large · 24 MP and up")
+        case .medium: String(localized: "Medium · 12 MP and up")
+        case .small: String(localized: "Small · 4 MP and up")
         }
     }
 }
 
 /// The one place the app's controls show colour: the swatches describe the photos.
 private extension SearchFilters.ColorName {
-    var title: String { rawValue.capitalized }
+    var title: String {
+        switch self {
+        case .red: String(localized: "Red")
+        case .orange: String(localized: "Orange")
+        case .yellow: String(localized: "Yellow")
+        case .green: String(localized: "Green")
+        case .turquoise: String(localized: "Turquoise")
+        case .blue: String(localized: "Blue")
+        case .violet: String(localized: "Violet")
+        case .pink: String(localized: "Pink")
+        case .brown: String(localized: "Brown")
+        case .black: String(localized: "Black")
+        case .gray: String(localized: "Gray")
+        case .white: String(localized: "White")
+        }
+    }
+
     var swatch: Color { Color(hex: swatchHex) ?? Palette.ink }
     var menuSwatch: Image { Image(uiImage: MenuSwatch.image(for: UIColor(swatch))) }
 

@@ -51,7 +51,7 @@ struct VideoFeedView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: Constants.headerSpacing) {
-            ScreenHeaderView(title: "Videos")
+            ScreenHeaderView(title: String(localized: "Videos"))
             VideoFilterBarView(filters: viewModel.filters, onChange: applyFilters)
             if let savedAt = viewModel.savedAt {
                 SavedCopyBannerView(savedAt: savedAt)
@@ -81,10 +81,10 @@ struct VideoFeedView: View {
 
     private var emptyState: PagedGridView<Video, VideoTileView>.EmptyState {
         viewModel.filters.isEmpty
-            ? .init(systemImage: "play.rectangle", title: "No videos yet",
-                    detail: "Pull down to check for new videos.")
-            : .init(systemImage: "play.rectangle", title: "No videos found",
-                    detail: "No popular videos match these filters. Try fewer filters.")
+            ? .init(systemImage: "play.rectangle", title: String(localized: "No videos yet"),
+                    detail: String(localized: "Pull down to check for new videos."))
+            : .init(systemImage: "play.rectangle", title: String(localized: "No videos found"),
+                    detail: String(localized: "No popular videos match these filters. Try fewer filters."))
     }
 
     private func applyFilters(_ filters: VideoFilters) {

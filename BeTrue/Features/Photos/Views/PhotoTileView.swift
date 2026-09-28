@@ -27,6 +27,6 @@ struct PhotoTileView: View {
 
 extension Photo {
     var accessibilityDescription: String {
-        photographer.isEmpty ? caption : "\(caption), photo by \(photographer)"
+        photographer.isEmpty ? caption : String(localized: "\(caption), photo by \(photographer)")
     }
 }

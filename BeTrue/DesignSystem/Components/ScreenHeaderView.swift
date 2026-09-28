@@ -4,7 +4,7 @@ import SwiftUI
 struct ScreenHeaderView: View {
     private enum Constants {
         static let wordmark = "BeTrue"
-        static let credit = "Powered by Pexels"
+        static let credit = String(localized: "Powered by Pexels")
         static let creditURL = URL(string: "https://www.pexels.com")!
     }
 
